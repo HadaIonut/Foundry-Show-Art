@@ -1,8 +1,10 @@
 export default class MediaDisplayApp extends FormApplication {
-    constructor (imageLocation, text) {
+    constructor (imageLocation, text, actor, type) {
         super();
         this.imageLocation = imageLocation;
-        this.text = text;
+        this.text = text || '';
+        this.actor = actor;
+        this.type = type;
     }
 
     static get defaultOptions() {
@@ -27,6 +29,7 @@ export default class MediaDisplayApp extends FormApplication {
     }
 
     async _updateObject(event, formData) {
-
+        await this.actor.setFlag('Show-Art', `Author-${this.type}`, formData.author);
+        console.log(formData);
     }
 }

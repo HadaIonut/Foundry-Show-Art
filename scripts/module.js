@@ -20,12 +20,13 @@ const createButton = () => {
 
 Hooks.on('renderTokenHUD', (hud, html, title) => {
     const artButton = createButton();
+    const actor = game.actors.get(title.actorId)
 
     artButton.on('click', () => {
-        new MediaDisplayApp(title.img, "text").render(true);
+        new MediaDisplayApp(title.img, actor.getFlag('Show-Art', 'Author-token'), actor, 'token').render(true);
     });
     artButton.on('contextmenu', () => {
-        new MediaDisplayApp(game.actors.get(title.actorId).data.img, "text2").render(true);
+        new MediaDisplayApp(actor.data.img, actor.getFlag('Show-Art', 'Author-main'), actor, 'main').render(true);
     })
 
     html.children('.left').append(artButton);
