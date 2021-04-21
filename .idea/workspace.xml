@@ -20,12 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d538012-f92f-483f-b3e1-d7f3fcd6b66b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/scripts/MediaDisplayApp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mediaDisplayApp.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module.json" beforeDir="false" afterPath="$PROJECT_DIR$/module.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/module.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/module.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -80,6 +91,8 @@
       <workItem from="1604936394394" duration="104000" />
       <workItem from="1604936515379" duration="31000" />
       <workItem from="1604936553224" duration="1676000" />
+      <workItem from="1619005591106" duration="3984000" />
+      <workItem from="1619021184316" duration="2392000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1604937546780</created>
