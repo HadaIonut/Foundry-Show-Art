@@ -34,7 +34,39 @@ const receiveSharedImages = (receivedObject) => {
     new MediaDisplayApp(receivedObject.imgPath, receivedObject.text, game.actors.get(receivedObject.actorId), receivedObject.type, game.user.isGM).render(true);
 }
 
+const shareImage = async (imgPath, text, actorId, type) => {
+    await game.socket.emit('module.ShowArt', {
+        imgPath: imgPath,
+        text: text,
+        actorId: actorId,
+        type: type
+    })
+}
+
+const keyEventHandler = async (event, image, tokenImage, actor) => {
+    if (event.shiftKey && event.key == "Z") {
+        await shareImage(image, actor.getFlag('ShowArt', 'Author-token'), actor.data._id, 'token');
+    }
+    else if (event.shiftKey && event.key == "X") {
+        await shareImage(tokenImage, actor.getFlag('ShowArt', 'Author-main'), actor.data._id, 'main');
+    }
+}
+
+const prepTokenKeybinding = (token, control) => {
+    const doc = $(document);
+    doc.off("keydown.showArt");
+    if (!control) return;
+
+    const actor = game.actors.get(token.data.actorId);
+    const image = actor.data.img;
+    const tokenImage = token.data.img;
+
+    doc.on("keydown.showArt", (event) => keyEventHandler(event, image, tokenImage, actor));
+}
+
 Hooks.on("ready", () => {
     console.log('setting up socket connection');
     game.socket.on('module.ShowArt', receiveSharedImages);
 })
+
+Hooks.on("controlToken", (...args) => prepTokenKeybinding(...args));

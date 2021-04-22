@@ -19,12 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d538012-f92f-483f-b3e1-d7f3fcd6b66b" name="Default Changelist" comment="Added persistent text for author">
+    <list default="true" id="6d538012-f92f-483f-b3e1-d7f3fcd6b66b" name="Default Changelist" comment="Share function, persistancy for locking">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module.json" beforeDir="false" afterPath="$PROJECT_DIR$/module.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/MediaDisplayApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/MediaDisplayApp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/module.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/module.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mediaDisplayApp.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mediaDisplayApp.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +91,7 @@
       <workItem from="1619005591106" duration="3984000" />
       <workItem from="1619021184316" duration="4305000" />
       <workItem from="1619084757208" duration="9438000" />
-      <workItem from="1619113249869" duration="3716000" />
+      <workItem from="1619113249869" duration="5506000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1604937546780</created>
@@ -124,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619024936299</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Share function, persistancy for locking">
+      <created>1619117222897</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1619117222897</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +154,8 @@
     <MESSAGE value="Init" />
     <MESSAGE value="Added button on the right click menu and created the image display window" />
     <MESSAGE value="Added persistent text for author" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added persistent text for author" />
+    <MESSAGE value="Share function, persistancy for locking" />
+    <option name="LAST_COMMIT_MESSAGE" value="Share function, persistancy for locking" />
   </component>
   <component name="WindowStateProjectService">
     <state x="949" y="333" key="EditFileWatcherDialog" timestamp="1604937408492">
