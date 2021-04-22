@@ -2,8 +2,12 @@
     <div style="height: 95%">
         <img src="{{imageLocation}}"/>
     </div>
-    <div class="form-group" style="height: 5%;">
+    <div class="form-group author-input" style="height: 5%; {{#unless isGM}} display: none; {{/unless}}">
         <label>Author: </label>
         <input name="author" value="{{text}}" type="text"/>
+    </div>
+
+    <div class="author-selected" style=" {{#if isGM}} display: none {{/if}}">
+        <p>Author: {{text}}</p>
     </div>
 </form>

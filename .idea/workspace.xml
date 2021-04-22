@@ -19,8 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d538012-f92f-483f-b3e1-d7f3fcd6b66b" name="Default Changelist" comment="Added button on the right click menu and created the image display window">
+    <list default="true" id="6d538012-f92f-483f-b3e1-d7f3fcd6b66b" name="Default Changelist" comment="Added persistent text for author">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module.json" beforeDir="false" afterPath="$PROJECT_DIR$/module.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/MediaDisplayApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/MediaDisplayApp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/module.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/module.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mediaDisplayApp.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mediaDisplayApp.hbs" afterDir="false" />
@@ -91,7 +92,9 @@
       <workItem from="1604936515379" duration="31000" />
       <workItem from="1604936553224" duration="1676000" />
       <workItem from="1619005591106" duration="3984000" />
-      <workItem from="1619021184316" duration="3658000" />
+      <workItem from="1619021184316" duration="4305000" />
+      <workItem from="1619084757208" duration="9438000" />
+      <workItem from="1619113249869" duration="3716000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1604937546780</created>
@@ -114,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619023668837</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added persistent text for author">
+      <created>1619024936299</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1619024936299</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +149,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Init" />
     <MESSAGE value="Added button on the right click menu and created the image display window" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added button on the right click menu and created the image display window" />
+    <MESSAGE value="Added persistent text for author" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added persistent text for author" />
   </component>
   <component name="WindowStateProjectService">
     <state x="949" y="333" key="EditFileWatcherDialog" timestamp="1604937408492">

@@ -1,11 +1,12 @@
 {
-  "name": "Show-Art",
+  "name": "ShowArt",
   "title": "Show-Art",
   "description": "",
   "version": "0.0.1",
   "minimumCoreVersion": "0.7.9",
   "compatibleCoreVersion": "0.7.9",
   "author": "HadaIonut",
+  "socket": true,
   "dependencies": [
 
   ],
