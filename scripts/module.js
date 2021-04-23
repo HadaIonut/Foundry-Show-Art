@@ -50,6 +50,12 @@ const keyEventHandler = async (event, image, tokenImage, actor) => {
     else if (event.shiftKey && event.key == "X") {
         await shareImage(tokenImage, actor.getFlag('ShowArt', 'Author-main'), actor.data._id, 'main');
     }
+    else if(event.shiftKey && event.key == "V") {
+        new MediaDisplayApp(tokenImage, actor.getFlag('ShowArt', 'Author-main'), actor, 'token', game.user.isGM).render(true);
+    }
+    else if(event.shiftKey && event.key == "B") {
+        new MediaDisplayApp(image, actor.getFlag('ShowArt', 'Author-main'), actor, 'main', game.user.isGM).render(true);
+    }
 }
 
 const prepTokenKeybinding = (token, control) => {
@@ -70,3 +76,4 @@ Hooks.on("ready", () => {
 })
 
 Hooks.on("controlToken", (...args) => prepTokenKeybinding(...args));
+Hooks.on("hoverToken", (...args) => prepTokenKeybinding(...args));
