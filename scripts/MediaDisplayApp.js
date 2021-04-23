@@ -65,11 +65,13 @@ export default class MediaDisplayApp extends FormApplication {
 
     activateListeners(html) {
         super.activateListeners(html);
-
         const appendLocation = html.parent().parent().find('.close');
-        const shareButton = $(`<a> <i class="fas fa-share-square"></i> Share</a>`);
-        shareButton.on('click', () => shareImage(this.imageLocation, this.text, this.actor.data._id, this.type));
-        appendLocation.before(shareButton);
+
+        if (this.playerIsGm) {
+            const shareButton = $(`<a> <i class="fas fa-share-square"></i> Share</a>`);
+            shareButton.on('click', () => shareImage(this.imageLocation, this.text, this.actor.data._id, this.type));
+            appendLocation.before(shareButton);
+        }
 
         this.createSaveButton(appendLocation, html);
     }

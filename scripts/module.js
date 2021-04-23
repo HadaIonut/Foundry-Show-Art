@@ -44,10 +44,10 @@ const shareImage = async (imgPath, text, actorId, type) => {
 }
 
 const keyEventHandler = async (event, image, tokenImage, actor) => {
-    if (event.shiftKey && event.key == "Z") {
+    if (event.shiftKey && event.key == "Z" && game.user.isGM) {
         await shareImage(image, actor.getFlag('ShowArt', 'Author-token'), actor.data._id, 'token');
     }
-    else if (event.shiftKey && event.key == "X") {
+    else if (event.shiftKey && event.key == "X" && game.user.isGM) {
         await shareImage(tokenImage, actor.getFlag('ShowArt', 'Author-main'), actor.data._id, 'main');
     }
     else if(event.shiftKey && event.key == "V") {
