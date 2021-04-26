@@ -2,12 +2,12 @@
     <div style="height: 95%">
         <img style="border: #000;" src="{{imageLocation}}"/>
     </div>
-    <div class="form-group author-input" style="height: 1rem; margin-bottom: 5px;  {{#unless isGM}} display: none; {{/unless}}">
-        <label style="color: white;">Author: </label>
-        <input style="color: white;" name="author" value="{{text}}" type="text"/>
+    <div class="form-group author-input text-sizing" style="{{#unless isGM}} display: none; {{/unless}}">
+        <label class="white-text">Author: </label>
+        <input class="white-text" name="author" value="{{text}}" type="text"/>
     </div>
 
-    <div class="author-selected" style="height: 1rem; margin-bottom: 5px; {{#if isGM}} display: none {{/if}}">
-        <p style="color: white">Author: {{text}}</p>
+    <div class="author-selected text-sizing" style="{{#if isGM}} display: none {{/if}}">
+        <p class="white-text">Author: {{text}}</p>
     </div>
 </form>
