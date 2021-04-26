@@ -1,3 +1,6 @@
 
 
 /*# sourceMappingURL=module.css.map */
+.transparent-window {
+    background: rgba(0,0,0,0) !important;
+}

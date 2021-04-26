@@ -73,6 +73,8 @@ export default class MediaDisplayApp extends FormApplication {
             appendLocation.before(shareButton);
         }
 
+        html.parent().addClass('transparent-window');
+
         this.createSaveButton(appendLocation, html);
     }
 }
