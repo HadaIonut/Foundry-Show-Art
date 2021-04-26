@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d538012-f92f-483f-b3e1-d7f3fcd6b66b" name="Default Changelist" comment="Players opening art displays of actors they don't own">
+    <list default="true" id="6d538012-f92f-483f-b3e1-d7f3fcd6b66b" name="Default Changelist" comment="Disabled player's ability to share art">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/MediaDisplayApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/MediaDisplayApp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/module.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/module.js" afterDir="false" />
@@ -93,7 +93,9 @@
       <workItem from="1619021184316" duration="4305000" />
       <workItem from="1619084757208" duration="9438000" />
       <workItem from="1619113249869" duration="5577000" />
-      <workItem from="1619203289202" duration="654000" />
+      <workItem from="1619203289202" duration="1428000" />
+      <workItem from="1619283480532" duration="21000" />
+      <workItem from="1619460025872" duration="174000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1604937546780</created>
@@ -144,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619203866979</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Disabled player's ability to share art">
+      <created>1619204047970</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1619204047970</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +182,7 @@
     <MESSAGE value="Share function, persistancy for locking" />
     <MESSAGE value="Macros for sharing" />
     <MESSAGE value="Players opening art displays of actors they don't own" />
-    <option name="LAST_COMMIT_MESSAGE" value="Players opening art displays of actors they don't own" />
+    <MESSAGE value="Disabled player's ability to share art" />
+    <option name="LAST_COMMIT_MESSAGE" value="Disabled player's ability to share art" />
   </component>
 </project>

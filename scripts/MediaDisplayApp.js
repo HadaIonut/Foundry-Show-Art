@@ -24,7 +24,7 @@ export default class MediaDisplayApp extends FormApplication {
             id: "show-art-media-display-app",
             template: "modules/ShowArt/templates/mediaDisplayApp.hbs",
             resizable: true,
-            minimizable: false,
+            minimizable: true,
             submitOnClose: true,
             width: "fit-content",
             height: "fit-content",
