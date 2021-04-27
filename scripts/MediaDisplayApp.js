@@ -8,7 +8,7 @@ const shareImage = async (imgPath, text, actorId, type) => {
 }
 
 export default class MediaDisplayApp extends FormApplication {
-    constructor (imageLocation, text, actor, type, playerIsGM) {
+    constructor(imageLocation, text, actor, type, playerIsGM) {
         super();
         this.imageLocation = imageLocation;
         this.text = text || '';
@@ -36,7 +36,8 @@ export default class MediaDisplayApp extends FormApplication {
         return {
             imageLocation: this.imageLocation,
             text: this.text,
-            isGM: this.playerIsGm && (this.currentState === 'hidden' || this.currentState === undefined)
+            isGM: this.playerIsGm && (this.currentState === 'hidden' || this.currentState === undefined),
+            textIsEmpty: !!this.text
         }
     }
 
@@ -49,15 +50,16 @@ export default class MediaDisplayApp extends FormApplication {
     }
 
     createSaveButton(appendLocation, html) {
-        if (!game.user.isGM) return;
+        if (!game.user.isGM || html.parent().parent().find('.hideInput').length !== 0) return;
 
-        const hideInputButton = $(`<a> <i class="fas fa-save"> Lock</i></a>`);
-        hideInputButton.on('click',(event) => {
+        const hideInputButton = $(`<a class = "hideInput"> <i class="fas fa-save"> Lock</i></a>`);
+        hideInputButton.on('click', (event) => {
             const input = html.find('.author-input');
             const selected = html.find('.author-selected');
             input.toggle();
             selected.toggle();
-            selected.children('p')[0].innerText = `Author: ${html.find('.author-input').children('input').val()}`;
+            const displayVal = html.find('.author-input').children('input').val();
+            selected.children('p')[0].innerText = displayVal ? `Author: ${displayVal}` : '';
             this.currentState = this.currentState === 'visible' ? 'hidden' : 'visible';
         });
         appendLocation.before(hideInputButton);
@@ -67,8 +69,8 @@ export default class MediaDisplayApp extends FormApplication {
         super.activateListeners(html);
         const appendLocation = html.parent().parent().find('.close');
 
-        if (this.playerIsGm) {
-            const shareButton = $(`<a> <i class="fas fa-share-square"></i> Share</a>`);
+        if (this.playerIsGm && html.parent().parent().find('.shareButton').length === 0) {
+            const shareButton = $(`<a class="shareButton"> <i class="fas fa-share-square"></i> Share</a>`);
             shareButton.on('click', () => shareImage(this.imageLocation, this.text, this.actor.data._id, this.type));
             appendLocation.before(shareButton);
         }

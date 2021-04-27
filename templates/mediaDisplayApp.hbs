@@ -3,11 +3,11 @@
         <img style="border: #000;" src="{{imageLocation}}"/>
     </div>
     <div class="form-group author-input text-sizing" style="{{#unless isGM}} display: none; {{/unless}}">
-        <label class="white-text">Author: </label>
+        <label class="white-text" >Author: </label>
         <input class="white-text" name="author" value="{{text}}" type="text"/>
     </div>
 
     <div class="author-selected text-sizing" style="{{#if isGM}} display: none {{/if}}">
-        <p class="white-text">Author: {{text}}</p>
+        <p class="white-text" style="{{#unless textIsEmpty}} display: none{{/unless}}">Author: {{text}}</p>
     </div>
 </form>
