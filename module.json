@@ -1,7 +1,7 @@
 {
   "name": "ShowArt",
   "title": "Show Art With Credits",
-  "description": "",
+  "description": "This module offers a button to the token or tile HUD that opens the actor's token, or their artwork on right click. The displayed window contains an input field for crediting the author of the art with the option to lock the field.",
   "version": "0.0.1",
   "minimumCoreVersion": "0.7.9",
   "compatibleCoreVersion": "0.7.9",
