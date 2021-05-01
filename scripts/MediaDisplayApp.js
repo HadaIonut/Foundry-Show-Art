@@ -60,7 +60,8 @@ export default class MediaDisplayApp extends FormApplication {
             selected.toggle();
             const displayVal = html.find('.author-input').children('input').val();
             selected.children('p')[0].innerText = displayVal ? `Author: ${displayVal}` : '';
-            if (selected.children('p')[0].innerText) selected.children('p').toggle();
+            if (selected.children('p')[0].innerText) selected.children('p').show();
+            if (!selected.children('p')[0].innerText) selected.children('p').hide();
             this.currentState = this.currentState === 'visible' ? 'hidden' : 'visible';
         });
         appendLocation.before(hideInputButton);
