@@ -1,17 +1,14 @@
-# Module name
+# Show Art With Credits
 ![Downloads](https://img.shields.io/github/downloads/HadaIonut/Foundry-Show-Art/latest/module.zip?style=for-the-badge)
-![License](https://img.shields.io/github/license/bmarian/fvtt-module-template?style=for-the-badge)
-![GitHub Latest Release](https://img.shields.io/github/release/bmarian/fvtt-module-template?style=for-the-badge)
-![Foundry Version](https://img.shields.io/badge/FoundryVTT-0.7.6-blueviolet?style=for-the-badge)
 
-Short description
+This module is a modified version of Zeel's [Show Art](https://github.com/zeel01/TokenHUDArtButton) module.
 
-# Installation
-- Go in the `Add-on Modules` section
-- Click `Install Module`
-- And search for Fvtt Module Template
+It offers a button to the token or tile HUD that opens the actor's token, or their artwork on right click. 
+The displayed window contains an input field for crediting the author of the art with the option to lock the field. 
+It also adds shortcuts keybindings:
+ - Shift+Z: Show token to everyone
+ - Shift+X: Show artwork to everyone
+ - Shift+V: Open token for yourself
+ - Shift+B: Open artwork for yourself
 
-# Settings
-
-# Examples
 
