@@ -1,5 +1,5 @@
-<form class="mediaDisplay">
-    <div style="height: 95%">
+<form class="mediaDisplay" style="overflow: hidden">
+    <div>
         <img style="border: #000;" src="{{imageLocation}}"/>
     </div>
     <div class="form-group author-input text-sizing" style="{{#unless isGM}} display: none; {{/unless}}">
@@ -7,7 +7,7 @@
         <input class="white-text" name="author" value="{{text}}" type="text"/>
     </div>
 
-    <div class="author-selected text-sizing" style="{{#if isGM}} display: none {{/if}}">
-        <p class="white-text" style="{{#unless textIsEmpty}} display: none{{/unless}}">Author: {{text}}</p>
+    <div class="author-selected text-sizing" style="{{#if isGM}} display: none; {{/if}}">
+        <p class="white-text" style="{{#unless textIsEmpty}} display: none;{{/unless}}">Author: {{text}}</p>
     </div>
 </form>

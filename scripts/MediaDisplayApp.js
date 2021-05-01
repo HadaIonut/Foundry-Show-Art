@@ -21,7 +21,7 @@ export default class MediaDisplayApp extends FormApplication {
     static get defaultOptions() {
         return {
             ...super.defaultOptions,
-            id: "show-art-media-display-app",
+            id: `show-art-media-display-app-${randomID()}`,
             template: "modules/ShowArt/templates/mediaDisplayApp.hbs",
             resizable: true,
             minimizable: true,
@@ -53,13 +53,14 @@ export default class MediaDisplayApp extends FormApplication {
         if (!game.user.isGM || html.parent().parent().find('.hideInput').length !== 0) return;
 
         const hideInputButton = $(`<a class = "hideInput"> <i class="fas fa-save"> Lock</i></a>`);
-        hideInputButton.on('click', (event) => {
+        hideInputButton.on('click', () => {
             const input = html.find('.author-input');
             const selected = html.find('.author-selected');
             input.toggle();
             selected.toggle();
             const displayVal = html.find('.author-input').children('input').val();
             selected.children('p')[0].innerText = displayVal ? `Author: ${displayVal}` : '';
+            if (selected.children('p')[0].innerText) selected.children('p').toggle();
             this.currentState = this.currentState === 'visible' ? 'hidden' : 'visible';
         });
         appendLocation.before(hideInputButton);
