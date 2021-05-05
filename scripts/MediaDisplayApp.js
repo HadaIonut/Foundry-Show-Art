@@ -8,7 +8,14 @@ const shareImage = async (imgPath, text, actorId, type) => {
 }
 
 let gImgSize = {};
-const setImageSize = (imgSize) => { gImgSize = imgSize };
+let extraData = '';
+
+const setImageSize = (imgSize) => {
+    gImgSize = imgSize
+};
+const setExtraData = (type, actorID) => {
+    extraData = `${type}-${actorID}`;
+}
 
 class MediaDisplayApp extends FormApplication {
     constructor(imageLocation, text, actor, type, playerIsGM) {
@@ -24,7 +31,7 @@ class MediaDisplayApp extends FormApplication {
     static get defaultOptions() {
         return {
             ...super.defaultOptions,
-            id: `show-art-media-display-app-${randomID()}`,
+            id: `show-art-media-display-app-${extraData}`,
             template: "modules/ShowArt/templates/mediaDisplayApp.hbs",
             classes: ['transparent-window'],
             resizable: true,
@@ -88,4 +95,5 @@ class MediaDisplayApp extends FormApplication {
 export {
     setImageSize,
     MediaDisplayApp,
+    setExtraData
 }
