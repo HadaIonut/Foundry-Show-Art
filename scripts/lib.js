@@ -1,4 +1,4 @@
-import MediaDisplayApp from "./MediaDisplayApp.js";
+import { setImageSize, MediaDisplayApp} from "./MediaDisplayApp.js";
 
 const createArtButton = () => {
     let button = document.createElement("div");
@@ -15,9 +15,24 @@ const createReceivedMediaDisplayApp = (receivedObject) => {
     new MediaDisplayApp(receivedObject.imgPath, receivedObject.text, game.actors.get(receivedObject.actorId), receivedObject.type, game.user.isGM).render(true);
 }
 
-const createNewMediaDisplayApp = (imagePath, actor, type) => {
-    new MediaDisplayApp(imagePath, actor.getFlag('ShowArt', `Author-${type}`), actor, type, game.user.isGM).render(true);
-}
+const createNewMediaDisplayAppWithImageDimensions = (imagePath, actor, type) => {
+    const img = new Image();
+    img.onload = () => {
+      setImageSize({ w: img.width, h: img.height });
+
+      new MediaDisplayApp(
+        imagePath,
+        actor.getFlag('ShowArt', `Author-${type}`),
+        actor,
+        type,
+        game.user.isGM,
+      ).render(true);
+    }
+
+    img.src = imagePath;
+};
+
+const createNewMediaDisplayApp = (imagePath, actor, type) => createNewMediaDisplayAppWithImageDimensions(imagePath, actor, type);
 
 const receiveSharedImages = (receivedObject) => {
     createReceivedMediaDisplayApp(receivedObject);

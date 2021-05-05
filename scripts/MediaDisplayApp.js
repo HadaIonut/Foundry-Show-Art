@@ -7,7 +7,10 @@ const shareImage = async (imgPath, text, actorId, type) => {
     })
 }
 
-export default class MediaDisplayApp extends FormApplication {
+let gImgSize = {};
+const setImageSize = (imgSize) => { gImgSize = imgSize };
+
+class MediaDisplayApp extends FormApplication {
     constructor(imageLocation, text, actor, type, playerIsGM) {
         super();
         this.imageLocation = imageLocation;
@@ -23,12 +26,13 @@ export default class MediaDisplayApp extends FormApplication {
             ...super.defaultOptions,
             id: `show-art-media-display-app-${randomID()}`,
             template: "modules/ShowArt/templates/mediaDisplayApp.hbs",
+            classes: ['transparent-window'],
             resizable: true,
             minimizable: true,
             submitOnClose: true,
-            width: "fit-content",
-            height: "fit-content",
             title: "Media Display",
+            width: gImgSize.w,
+            height: gImgSize.h,
         }
     }
 
@@ -69,16 +73,19 @@ export default class MediaDisplayApp extends FormApplication {
 
     activateListeners(html) {
         super.activateListeners(html);
-        const appendLocation = html.parent().parent().find('.close');
+        const $mediaDisplay = html.parent().parent();
+        const appendLocation = $mediaDisplay.find('.close');
 
-        if (this.playerIsGm && html.parent().parent().find('.shareButton').length === 0) {
+        if (this.playerIsGm && $mediaDisplay.find('.shareButton').length === 0) {
             const shareButton = $(`<a class="shareButton"> <i class="fas fa-share-square"></i> Share</a>`);
             shareButton.on('click', () => shareImage(this.imageLocation, this.text, this.actor.data._id, this.type));
             appendLocation.before(shareButton);
         }
-
-        html.parent().addClass('transparent-window');
-
         this.createSaveButton(appendLocation, html);
     }
+}
+
+export {
+    setImageSize,
+    MediaDisplayApp,
 }
