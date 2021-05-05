@@ -10,13 +10,13 @@
   }
 
   & .media-display {
-    overflow: hidden;
+    position: relative;
+    max-height: calc(100% - 20px);
   }
 
   & .image-container {
-    height: 85%;
+    height: 95%;
     text-align: center;
-    margin-bottom: 0.5rem;
 
     & img {
       border: #000000;
@@ -25,10 +25,10 @@
   }
 
   & .author-info-container {
-    height: 10%;
+    height: 5%;
 
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
   }
 }

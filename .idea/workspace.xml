@@ -21,6 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6d538012-f92f-483f-b3e1-d7f3fcd6b66b" name="Default Changelist" comment="Fixed buttons doubleing and Author: disapears when it's empty">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles/module.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +39,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path />
-    <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1k3jucXrtrOu1Bw8UxcK4rD3Ir8" />
   <component name="ProjectLevelVcsManager">
@@ -59,7 +56,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/styles" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -95,7 +93,9 @@
       <workItem from="1619283480532" duration="21000" />
       <workItem from="1619460025872" duration="5127000" />
       <workItem from="1619536758313" duration="3823000" />
-      <workItem from="1619850126592" duration="4385000" />
+      <workItem from="1619850126592" duration="5304000" />
+      <workItem from="1620223109607" duration="894000" />
+      <workItem from="1620224050265" duration="2656000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1604937546780</created>
@@ -202,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619854209166</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Module description">
+      <created>1619856230484</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1619856230484</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +245,11 @@
     <MESSAGE value="No more scroll bar, no more text over image (hopefully)" />
     <MESSAGE value="Refactor" />
     <MESSAGE value="Rename" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename" />
+    <MESSAGE value="Module description" />
+    <option name="LAST_COMMIT_MESSAGE" value="Module description" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
