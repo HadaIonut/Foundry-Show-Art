@@ -47,7 +47,7 @@ class MediaDisplayApp extends FormApplication {
         return {
             imageLocation: this.imageLocation,
             text: this.text,
-            isGM: this.playerIsGm && (this.currentState === 'hidden' || this.currentState === undefined),
+            isGM: !(this.playerIsGm && (this.currentState === 'hidden' || this.currentState === undefined)),
             textIsEmpty: !!this.text
         }
     }

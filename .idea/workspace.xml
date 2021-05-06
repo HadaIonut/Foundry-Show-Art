@@ -19,10 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d538012-f92f-483f-b3e1-d7f3fcd6b66b" name="Default Changelist" comment="Styling">
+    <list default="true" id="6d538012-f92f-483f-b3e1-d7f3fcd6b66b" name="Default Changelist" comment="Fixed multiple instances of the same art display&#10;Added image resizing to the received version of the display">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/MediaDisplayApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/MediaDisplayApp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/lib.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/lib.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles/module.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +96,8 @@
       <workItem from="1619536758313" duration="3823000" />
       <workItem from="1619850126592" duration="5304000" />
       <workItem from="1620223109607" duration="894000" />
-      <workItem from="1620224050265" duration="3573000" />
+      <workItem from="1620224050265" duration="5137000" />
+      <workItem from="1620320283599" duration="406000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1604937546780</created>
@@ -215,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620232225536</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Fixed multiple instances of the same art display&#10;Added image resizing to the received version of the display">
+      <created>1620233135703</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1620233135703</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +263,8 @@
     <MESSAGE value="Rename" />
     <MESSAGE value="Module description" />
     <MESSAGE value="Styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Styling" />
+    <MESSAGE value="Fixed multiple instances of the same art display&#10;Added image resizing to the received version of the display" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed multiple instances of the same art display&#10;Added image resizing to the received version of the display" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

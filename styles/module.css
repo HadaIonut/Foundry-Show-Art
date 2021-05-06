@@ -1,3 +1,6 @@
+.transparent-window {
+  min-width: 210px;
+}
 .transparent-window .window-content {
   background: rgba(0, 0, 0, 0);
 }
