@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d538012-f92f-483f-b3e1-d7f3fcd6b66b" name="Default Changelist" comment="Text input starts out as locked&#10;Added a min width to the window so the close button doesn't dissapear when the window is too small">
+    <list default="true" id="6d538012-f92f-483f-b3e1-d7f3fcd6b66b" name="Default Changelist" comment="Incread min width">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +93,8 @@
       <workItem from="1619850126592" duration="5304000" />
       <workItem from="1620223109607" duration="894000" />
       <workItem from="1620224050265" duration="5137000" />
-      <workItem from="1620320283599" duration="1057000" />
+      <workItem from="1620320283599" duration="1339000" />
+      <workItem from="1620399823835" duration="298000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1604937546780</created>
@@ -230,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620320758627</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Incread min width">
+      <created>1620321377622</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1620321377622</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +276,8 @@
     <MESSAGE value="Styling" />
     <MESSAGE value="Fixed multiple instances of the same art display&#10;Added image resizing to the received version of the display" />
     <MESSAGE value="Text input starts out as locked&#10;Added a min width to the window so the close button doesn't dissapear when the window is too small" />
-    <option name="LAST_COMMIT_MESSAGE" value="Text input starts out as locked&#10;Added a min width to the window so the close button doesn't dissapear when the window is too small" />
+    <MESSAGE value="Incread min width" />
+    <option name="LAST_COMMIT_MESSAGE" value="Incread min width" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

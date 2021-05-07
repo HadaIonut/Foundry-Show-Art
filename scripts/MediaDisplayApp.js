@@ -70,7 +70,7 @@ class MediaDisplayApp extends FormApplication {
             input.toggle();
             selected.toggle();
             const displayVal = html.find('.author-input').children('input').val();
-            selected.children('p')[0].innerText = displayVal ? `Author: ${displayVal}` : '';
+            selected.children('p')[0].innerText = displayVal ? `Artist: ${displayVal}` : '';
             if (selected.children('p')[0].innerText) selected.children('p').show();
             if (!selected.children('p')[0].innerText) selected.children('p').hide();
             this.currentState = this.currentState === 'visible' ? 'hidden' : 'visible';
