@@ -1,7 +1,8 @@
 import {createArtButton, createNewMediaDisplayApp, prepTokenKeybinding, receiveSharedImages} from "./lib.js"
+import {registerSettings} from './settings.js';
 
 Hooks.once('init', async () => {
-    CONFIG.debug.hooks = true;
+    registerSettings()
 });
 
 
